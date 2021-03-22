@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    display: block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.nav .container-fluid {
+    display: flex;
+    align-items: center;
+}
+
+.element-invisible {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.header {
+    padding-top: 30px;
+}
+
+.nav-omega {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.750316px;
+    color: #19191B;
+    margin-right: auto;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 40px;
+}
+
+.nav-link {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.500211px;
+    color: inherit;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-list {
+    display: none;
+    background-color: white;
+    border: 1px solid #eae9f2;
+    padding: 20px 0;
+    width: 200px;
+    position: absolute;
+    border-top: 3px solid #5454d4;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dropdown:hover .dropdown-list {
+    display: block;
+}
+
+.dropdown-link {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.get-app {
+    padding: 13px 20px;
+    background: #F04037;
+    border: 1px solid #C31A12;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.500211px;
+    color: #FFFFFF;
+}
+
+.get-app:hover {
+    background-color: #C31A12;
+}
+
+.travel .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.travel-img,
+.travel-info {
+    width: 50%;
+}
+
+.travel-title {
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1.87579px;
+    color: #19191B;
+}
+
+.travel-text {
+    margin-top: 30px;
+    font-size: 21px;
+    line-height: 39px;
+    letter-spacing: -0.656526px;
+    color: #19191B;
+}
+
+.travel-form {
+    width: 475px;
+    display: inline-block;
+    margin-top: 55px;
+    padding: 5px;
+    background: #FFFFFF;
+    border: 1px solid #EAE9F2;
+    border-radius: 10px;
+    position: relative;
+}
+
+.travel-form img {
+    margin: 20px 10px;
+}
+
+.travel-label {
+    display: flex;
+    align-items: center;
+}
+
+.travel-input {
+    width: 40%;
+    border: none;
+    line-height: 21px;
+    font-size: 18px;
+    padding: 3px;
+    color: #27272c;
+    margin-right: auto;
+    border-bottom: 1px solid #fff;
+}
+
+.travel-lable::placeholder {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.562737px;
+    color: #696871;
+}
+
+.travel-input:focus {
+    outline: none;
+}
+
+.submit-button {
+    margin-left: auto;
+    padding: 17px 40px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: #F04037;
+    border: 1px solid #C31A12;
+    border-radius: 5px;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.656526px;
+    color: #FFFFFF;
+    margin-right: 5px;
+}
+
+.travel-label:hover .travel-input {
+    border-bottom: 1px solid #27272c;
+}
+
+.travel {
+    margin: 100px 0;
+}
+
+.feedback {
+    background-color: #5454D4;
+    padding: 115px 0;
+}
+
+.feedback-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    margin-right: 4px;
+}
+
+.feedback-item {
+    margin-top: 30px;
+    font-size: 21px;
+    line-height: 39px;
+    letter-spacing: -0.656526px;
+    color: #FFFFFF;
+}
+
+.feedback-subtext {
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.500211px;
+    color: rgba(255, 255, 255, 0.7);
+}
