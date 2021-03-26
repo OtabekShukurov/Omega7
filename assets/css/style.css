@@ -59,9 +59,18 @@ a {
 .nav-omega {
     font-size: 24px;
     line-height: 28px;
+    font-weight: 700;
     letter-spacing: -0.750316px;
     color: #19191B;
     margin-right: auto;
+}
+
+.nav-omega:hover {
+    color: #424242;
+}
+
+.nav-line {
+    display: none;
 }
 
 .nav-list {
@@ -78,26 +87,37 @@ a {
     line-height: 19px;
     letter-spacing: -0.500211px;
     color: inherit;
+    transition: text-decoration 0.3s;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav-link span {
+    padding-bottom: 10px;
 }
 
 .dropdown {
     position: relative;
 }
 
+.dropdown:hover .dropdown-list {
+    display: block;
+}
+
 .dropdown-list {
+    z-index: 1;
+    background-color: #fff;
     display: none;
-    background-color: white;
     border: 1px solid #eae9f2;
     padding: 20px 0;
-    width: 200px;
+    width: 220px;
     position: absolute;
     border-top: 3px solid #5454d4;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-}
-
-.dropdown:hover .dropdown-list {
-    display: block;
+    transition: 0.3s;
 }
 
 .dropdown-link {
@@ -105,9 +125,14 @@ a {
     text-decoration: none;
     color: black;
     font-size: 14px;
+    transition: 0.3s;
 }
 
-.get-app {
+.dropdown-link:hover {
+    color: #5454d4;
+}
+
+.get-the-app {
     padding: 13px 20px;
     background: #F04037;
     border: 1px solid #C31A12;
@@ -117,9 +142,10 @@ a {
     text-align: center;
     letter-spacing: -0.500211px;
     color: #FFFFFF;
+    transition: 0.3s;
 }
 
-.get-app:hover {
+.get-the-app:hover {
     background-color: #C31A12;
 }
 
@@ -150,11 +176,11 @@ a {
 }
 
 .travel-form {
-    width: 475px;
+    width: 100%;
     display: inline-block;
     margin-top: 55px;
     padding: 5px;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border: 1px solid #EAE9F2;
     border-radius: 10px;
     position: relative;
@@ -191,7 +217,8 @@ a {
     outline: none;
 }
 
-.submit-button {
+.travel-form .submit-button {
+    cursor: pointer;
     margin-left: auto;
     padding: 17px 40px;
     position: absolute;
@@ -207,6 +234,7 @@ a {
     letter-spacing: -0.656526px;
     color: #FFFFFF;
     margin-right: 5px;
+    transition: 0.3s;
 }
 
 .travel-label:hover .travel-input {
@@ -238,6 +266,7 @@ a {
 }
 
 .feedback-item {
+    width: 45%;
     margin-top: 30px;
     font-size: 21px;
     line-height: 39px;
@@ -251,4 +280,745 @@ a {
     line-height: 28px;
     letter-spacing: -0.500211px;
     color: rgba(255, 255, 255, 0.7);
+}
+
+.travel-friends .container {
+    background-image: url("../img/iphone2.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: contain;
+}
+
+.friends-information {
+    width: 45%;
+    margin: 110px 0;
+}
+
+.friends-title {
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1.87579px;
+    color: #19191B;
+}
+
+.friends-text {
+    margin-top: 24px;
+    font-size: 21px;
+    line-height: 39px;
+    letter-spacing: -0.656526px;
+    color: #696871;
+}
+
+.friends-list {
+    margin-top: 43px;
+}
+
+.friends-item {
+    display: flex;
+    margin-bottom: 35px;
+    width: 75%;
+}
+
+.number {
+    width: 49px;
+    height: 49px;
+    margin-right: 22px;
+}
+
+.friends-item__title {
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: -0.656526px;
+    color: #19191B;
+}
+
+.friends-item__text {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.500211px;
+    color: #696871;
+    padding-bottom: 30px;
+}
+
+.four-img .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.four-info {
+    width: 45%;
+}
+
+.four-img-list {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.four-img-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.four-photo {
+    padding: 5px;
+}
+
+.four-title {
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1.87579px;
+    color: #19191B;
+}
+
+.wrap {
+    margin-top: 20%;
+}
+
+
+
+.four-text {
+    margin-top: 24px;
+    font-size: 21px;
+    line-height: 39px;
+    letter-spacing: -0.656526px;
+    color: #696871;
+}
+
+.experience {
+    margin-top: 90px;
+}
+
+.experience .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("../img/iphone3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 20% center;
+
+}
+
+.experience-info {
+    width: 45%;
+    padding: 160px 0px;
+}
+
+.experience-title {
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1.87579px;
+    color: #19191B;
+}
+
+.experience-text {
+    margin-top: 24px;
+    font-size: 21px;
+    line-height: 39px;
+    letter-spacing: -0.656526px;
+    color: #696871;
+}
+
+.experience-link {
+    width: 40%;
+    display: block;
+    margin-top: 40px;
+    padding: 17px 45px;
+    background: #F04037;
+    border: 1px solid #C31A12;
+    border-radius: 5px;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.656526px;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.experience-link:hover {
+    background-color: #C31A12;
+}
+
+.play {
+    position: relative;
+    margin-top: 150px;
+    padding: 355px 0;
+    background-image: url("../img/BG-girl.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.play .container {}
+
+.play-button {
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    transition: 0.3s;
+}
+
+.play-button:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    border: 1px solid rgb(122, 122, 122);
+}
+
+.play-button:focus {
+    outline: none;
+}
+
+.play-button:active {
+    box-shadow: 0 0 5px #a80000;
+}
+
+.get-app__title {
+    margin-top: 100px;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: -1.87579px;
+    color: #19191B;
+    margin-bottom: 20px;
+}
+
+.get-app__text {
+    width: 45%;
+    margin: 0 auto;
+    font-size: 21px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: -0.656526px;
+    color: #696871;
+}
+
+.get-app__list {
+    width: 35%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 34px auto;
+    margin-bottom: 80px;
+}
+
+.get-app__item {
+    margin-right: 18px;
+}
+
+.footer-nav {
+    padding: 30px 0;
+    border-top: 1px solid #EAE9F2;
+}
+
+.footer-nav .container {
+    display: flex;
+    align-items: center;
+}
+
+.footer-title__link {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.750316px;
+    color: #19191B;
+    margin-right: 41px;
+    transition: 0.3s;
+}
+
+.footer-title__link:hover {
+    color: #424242;
+}
+
+.footer_text {
+    font-size: 16px;
+    line-height: 38px;
+    letter-spacing: -0.500211px;
+    color: #19191B;
+}
+
+.footer-list {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.footer-item {
+    margin: 0 20px;
+}
+
+.footer-item__link {
+    font-size: 16px;
+    line-height: 38px;
+    text-align: right;
+    letter-spacing: -0.500211px;
+    color: #19191B;
+}
+
+.footer-item__link:hover {
+    text-decoration: underline;
+}
+
+@media(max-width:1320px){
+    .container-fluid {
+        width: 1180px;
+    }
+    .container {
+        width: 1040px;
+    }
+    .play {
+        margin-top: 120px;
+    }
+    .experience .container {
+        background-position: right center;
+        background-size: 340px;
+    }
+    .friends-information {
+        width: 55%;
+    }
+
+    .experience-link {
+        width: 50%;
+    }
+
+    .play {
+        margin-top: 100px;
+    }
+    
+}
+
+@media(max-width:1220px){
+    .container-fluid {
+        width: 1080px;
+    }
+
+    .container {
+        width: 940px;
+    }
+
+    .travel-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .travel-photo {
+        width: 270px;
+    }
+
+    .feedback {
+        padding: 80px 0;
+    }
+
+    
+}
+
+@media(max-width: 1120px){
+    .container-fluid {
+        width: 950px;
+    }
+
+    .container {
+        width: 850px;
+    }
+
+    .experience-link  {
+        width: 60%;
+    }
+
+    .play {
+        margin-top: 80px;
+    }
+
+    .travel-friends .container {
+        background-size: 300px;
+    }
+
+    .travel-title, .friends-title, .four-title, .experience-title, .get-app__title {
+        font-size: 55px;
+        line-height: 60px;
+    }
+
+    .experience-info {
+        padding: 130px 0;
+    }
+
+    .experience {
+        margin-top: 20px;
+    }
+
+    .get-app__title {
+        margin-top: 80px;
+    }
+}
+
+@media(max-width:1020px){
+    .container-fluid {
+        width: 850px;
+    }
+
+    .container {
+        width: 780px;
+    }
+
+    .travel {
+        margin: 60px;
+    }
+
+    .travel-title, .friends-title, .four-title, .experience-title, .get-app__title {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .travel-text, .friends-text, .four-text, .experience-text, .get-app__text {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .get-app__text {
+        width: 100%;
+    }
+
+    .experience-info {
+        padding: 90px 0;
+    }
+
+    .experience .container {
+        background-size: 280px;
+    }
+
+    .footer-nav .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .footer-title {
+        width: 50%;
+    }
+
+    .footer__text {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;   
+    }
+
+    .footer-list {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width:920px){
+    .container-fluid {
+        width: 750px;
+    }
+
+    .container {
+        width: 700px;
+    }
+
+    .feedback-text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+@media(max-width:820px){
+    .container-fluid {
+        width: 650px;
+    }
+
+    .container {
+        width: 650px;
+    }
+
+    .travel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .travel-form {
+        width: 70%;
+    }
+
+    .travel-photo {
+        display: none;
+    }
+
+    .travel-img {
+        width: 0;
+    }
+
+    .travel-info {
+        width: 100%;
+    }
+
+    .travel-friends .container {
+        background-image: none;
+    }
+
+    .friends-information {
+        width: 100%;
+    }
+
+    .friends-title {
+        text-align: center;
+    }
+
+    .friends-text {
+        text-align: center;
+    }
+
+    .number {
+        display: none;
+    }
+
+    .friends-item {
+        width: 100%;
+        display: block;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .friends-information {
+        margin: 50px 0;
+    }
+
+    .friends-item__text {
+        padding-top: 10px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .four-img-list {
+        display: none;
+    }
+
+    .experience-link {
+        width: 70%;
+        margin: 30px auto;
+    }
+
+    .four-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    
+    .experience .container {
+        background-image: none;
+    }
+
+    .experience-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .play {
+        margin-top: 0;
+    }
+}
+
+@media(max-width:720px){
+    .container, .container-fluid {
+        width: 550px;
+    }
+
+    .get-app__list {
+        justify-content: center;
+    }
+
+    .get-app__item__link:hover .social-icon {
+        box-shadow: 0 0 10px red;
+    }
+
+    .social-icon {
+        max-width: none;
+    }
+
+    .travel-form {
+        padding: 0;
+    }
+
+    .travel-form .submit-button {
+        padding: 12px 20px;
+    }
+
+    .experience-info {
+        padding: 50px 0;
+    }
+
+    .friends-information {
+        margin: 40px 0;
+    }
+
+    .travel-text, .friends-text, .four-text, .experience-text, .get-app__text , .feedback-text , .feedback-subtext {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media(max-width:620px){
+    .container-fluid, .container {
+        width: 450px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .get-the-app {
+        display: none;
+    }
+
+    .travel-form .submit-button {
+        padding: 12px 10px;
+        font-size: 16px;
+    }
+
+    .nav-line {
+        display: block;
+        width: 30px;
+    }
+
+    .travel-input::placeholder {
+        font-size: 14px;
+    }
+
+    .travel-title, .friends-title, .four-title, .experience-title, .get-app__title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .star {
+        width: 16px;
+    }
+
+    .experience-info {
+        padding: 24px 0;
+    }
+
+    .experience-link {
+        font-size: 24px;
+    }
+}
+
+@media(max-width:520px){
+    .container, .container-fluid {
+        width: 350px;
+    }
+
+    .travel-form {
+        width: 100%;
+    }
+
+    .travel-form .submit-button {
+        padding: 12px 20px;
+    }
+
+    .feedback {
+        padding: 30px 0;
+    }
+
+    .feedback-list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .feedback-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .feedback-text {
+        width: 63%;
+        text-align: justify;
+
+    }
+
+    .travel-title, .friends-title, .four-title, .experience-title, .get-app__title {
+        font-size: 30px;
+        font-weight: 40px;
+    }
+
+    .footer_text {
+        display: none;
+    }
+
+    .footer-list {
+        margin-left: auto;
+        display: block;
+    }
+
+    .footer-item {
+        margin: 0;
+    }
+
+    .footer-title {
+        width: 100%;
+        margin-left: auto;
+        margin-bottom: 20px;
+    }
+
+    .footer-title__link {
+        margin-right: 0;
+        margin-left: 77.8%;
+    }
+
+    .footer__text {
+        width: 100%;
+    }
+}
+
+@media(max-width:420px){
+    .container-fluid, .container {
+        width: 350px;
+    }
+
+    .travel-title, .friends-title, .four-title, .experience-title, .get-app__title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .travel-form {
+        margin-top: 20px;
+    }
+
+    .travel-form img {
+        margin: 20px 3px;
+    }
+
+    .travel-input {
+        font-size: 14px;
+    }
+
+    .travel-form .submit-button {
+        padding: 12px 3px;
+    }
+
+    .footer__text {
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+
+    .get-app__item__link img {
+        max-width: 130px;
+    }
 }
