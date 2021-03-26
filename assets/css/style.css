@@ -731,6 +731,10 @@ a {
         font-size: 18px;
         line-height: 28px;
     }
+
+    .experience-link {
+        width: 70%;
+    }
 }
 
 @media(max-width:820px){
